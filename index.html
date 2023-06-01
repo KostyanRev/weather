@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather Widget</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="weather" class="weather">
+            <div class="weather__search-city">
+                <input type="search" name="city" placeholder="Search city..." id="city" class="search-city__input-city">
+                <button class="search-button" id="search-btn"><img src="/img/search-icon.png" alt="search"
+                        class="search-city__img"></button>
+                <div class="current__location">
+                    <button class="location__btn">
+                        <img src="/img/current-pos.png" alt="geoposition-icon">
+                        <span class="span">Current Location</span>
+                    </button>
+                </div>
+            </div>
+            <div class="weather__search-result" id="search-result">
+                <ul class="view__list">
+                </ul>
+            </div>
+            <div class="weather__block">
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
